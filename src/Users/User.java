@@ -6,12 +6,11 @@ import java.util.List;
 public abstract class User {
     private User nextUser;
     private final String name;
-    private String birthday;
+    private final String birthday;
 
     public void setNextUser (User nextUser) {
         this.nextUser = nextUser;
     }
-
 
     public String getName () {
         return name;
@@ -24,10 +23,6 @@ public abstract class User {
 
     public String getBirthday () {
         return birthday;
-    }
-
-    public void setBirthday (String birthday) {
-        this.birthday = birthday;
     }
 
     public User getNextUser () {
