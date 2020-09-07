@@ -1,3 +1,5 @@
+import Users.*;
+
 public class Main {
     public static void main (String[] args) {
         User[] users = {
@@ -9,19 +11,19 @@ public class Main {
                 new UserFranek("Franciszek", "Smuda", Sex.Male, "YTR435478", "01-01-997")
         };
 
-    users[0].setNextUser(users[1]);
-    users[1].setNextUser(users[2]);
-    users[2].setNextUser(users[3]);
-    users[3].setNextUser(users[4]);
-    users[4].setNextUser(users[5]);
+        users[0].setNextUser(users[1]);
+        users[1].setNextUser(users[2]);
+        users[2].setNextUser(users[3]);
+        users[3].setNextUser(users[4]);
+        users[4].setNextUser(users[5]);
 
-users[0].checkBirthday(users[0].getBirthday());
+        users[0].checkBirthday(users[0].getBirthday());
     }
-    }
+}
 
 /*
-Napisz mechanizm walidacji obiektu klasy User za pomocą łańcucha zobowiązań.
-Klasa User powinna zawierać następujące pola:
+Napisz mechanizm walidacji obiektu klasy Users.User za pomocą łańcucha zobowiązań.
+Klasa Users.User powinna zawierać następujące pola:
 - imię,
 - nazwisko,
 - płeć,
