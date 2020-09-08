@@ -3,12 +3,16 @@ import Users.*;
 public class Main {
     public static void main (String[] args) {
         User[] users = {
-                new UserRaf("Rafal", "Dogoda", Sex.Male, "ABC12345", "26-09-1986"),
-                new UserDom("Dominika", "Zagorska", Sex.Female, "CDE92912", "08-12-1995"),
-                new UserGreg("Grzegorz", "Skrzypczak", Sex.Male, "GFH723847", ""),
-                new UserJessica("Jessica", "Kowalska", Sex.Female, "WD212732", "30-02-2002"),
-                new UserJanusz("Janusz", "Bolkowski", Sex.Male, "ZXC209438", "02-01-1980"),
-                new UserFranek("Franciszek", "Smuda", Sex.Male, "YTR435478", "01-01-997")
+                /*
+                To check method which testing DOB change DOB in model
+                 */
+                new UserRaf("Rafal", "Dogoda", Sex.Male, "ABC12345", "01-1-2000"),
+                new UserDom("Dominika", "Zagorska", Sex.Female, "CDE92912", "1-1-2000"),
+                new UserGreg("Grzegorz", "Skrzypczak", Sex.Male, "GFH723847", "1-1-2000"),
+                new UserJessica("Jessica", "Kowalska", Sex.Female, "WD212732", "1-1-2020"),
+                new UserJanusz("Janusz", "Bolkowski", Sex.Male, "ZXC209438", "1-1-2020"),
+                new UserFranek("Franciszek", "Smuda", Sex.Male, "YTR435478", "1-1-2020"),
+                new UserAndrzejek("Andrzej","Kwasniewski", Sex.Male, "PLC489248", "1-1-2020")
         };
 
         setNextUser(users);
