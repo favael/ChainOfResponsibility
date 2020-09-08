@@ -11,13 +11,14 @@ public class Main {
                 new UserFranek("Franciszek", "Smuda", Sex.Male, "YTR435478", "01-01-997")
         };
 
-        users[0].setNextUser(users[1]);
-        users[1].setNextUser(users[2]);
-        users[2].setNextUser(users[3]);
-        users[3].setNextUser(users[4]);
-        users[4].setNextUser(users[5]);
-
+        setNextUser(users);
         users[0].checkBirthday(users[0].getBirthday());
+    }
+
+    private static void setNextUser (User[] users) {
+        for (int i = 0; i < users.length -1; i++) {
+            users[i].setNextUser(users[i +1]);
+        }
     }
 }
 
